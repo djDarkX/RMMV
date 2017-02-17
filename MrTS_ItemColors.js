@@ -11,7 +11,9 @@
 * @default #9d9d9d #FFFFFF #1eff00 #0070dd #a335ee #ff8000 #e6cc80
 * 
 * @help This plugin does not provide plugin commands.
-* Version 1.0
+* Version 1.01 - Small fix to ensure non-default colors are recognized in the project
+*
+* Version 1.0 - Initial Release
 *
 * Use the following tag in Item note fields:
 * <color: X> - X being index of color in the plugin Item Colors parameter.
@@ -21,7 +23,7 @@
 */
 
 (function() {
-	var parameters = PluginManager.parameters('MrTS_StaticExp');
+	var parameters = PluginManager.parameters('MrTS_ItemColors');
 
 	var itemColorsDefault = String(parameters['Item Colors'] || "#9d9d9d #FFFFFF #1eff00 #0070dd #a335ee #ff8000 #e6cc80")
 	var itemColors = itemColorsDefault.split(" ");
